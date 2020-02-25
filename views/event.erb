@@ -1,0 +1,29 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9"> 
+        <h2><i class="far fa-calendar-alt"></i><%= @event[:date] %></h2>
+        <h1><%= @event[:title] %></h1>
+        <p><%= @event[:description] %></p>
+        <div class="media">
+        <i class="fas fa-thumbs-up fa-3x"></i>
+        <div class="media-body">
+            <h5 class="mt-0">Brian</h5>
+            Wouldn't miss it!
+        </div>
+        </div>
+    </div>  
+    <div class="col-sm-3">
+        <h3>When?</h3>
+        <p><%= @event[:date] %></p> 
+        <h3>Where?</h3>
+        <p><%= @event[:location] %><p>
+        <h3>How many guests so far?</h3>
+        <p><i class="fas fa-thumbs-up fa-3x"> ???? </i></p>
+    </div>
+    <a href="/events/<%= @event[:id] %>/rsvps/new" class="btn btn-secondary">RSVP Now!</a>
+  </div>
+</div>
+
+
+
